@@ -7,7 +7,7 @@ loop do
   Thread.new(server.accept) do |connection|
     puts "Connected"
     while (message = connection.recv)
-      puts "Connected"
+      puts message
     end
   end
 end
